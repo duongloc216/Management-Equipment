@@ -267,42 +267,7 @@ cd client && npm run lint # Kiểm tra code style với ESLint
 - Xuất báo cáo Excel
 - Xem logs hệ thống
 
-## 🗃️ Database Schema
 
-Hệ thống sử dụng SQL Server với các bảng chính:
-
-### Users
-- `email` (PK) - Email người dùng
-- `full_name` - Họ tên
-- `password` - Mật khẩu (đã hash)
-- `role` - Vai trò (admin/user)
-- `department` - Phòng ban
-- `created_at` - Ngày tạo
-
-### Devices
-- `device_id` (PK) - ID thiết bị
-- `device_name` - Tên thiết bị
-- `category` - Danh mục
-- `status` - Trạng thái
-- `department` - Phòng ban quản lý
-- `purchase_date` - Ngày mua
-- `warranty_expiry` - Hết hạn bảo hành
-
-### Requests
-- `request_id` (PK) - ID yêu cầu
-- `user_email` (FK) - Email người yêu cầu
-- `device_id` (FK) - ID thiết bị
-- `request_type` - Loại yêu cầu
-- `status` - Trạng thái
-- `created_at` - Ngày tạo
-
-### Maintenance
-- `maintenance_id` (PK) - ID bảo trì
-- `device_id` (FK) - ID thiết bị
-- `maintenance_type` - Loại bảo trì
-- `scheduled_date` - Ngày dự kiến
-- `status` - Trạng thái
-- `cost` - Chi phí
 
 ## 🛡️ Bảo mật
 
@@ -350,21 +315,7 @@ npm run server:dev
 npm run client:dev
 ```
 
-## � Dọn dẹp và tối ưu
 
-Dự án đã được dọn dẹp và loại bỏ các file không cần thiết:
-
-### ✅ Đã loại bỏ:
-- File README.md trùng lặp trong server/
-- File .gitignore trùng lặp trong client/
-- File bun.lockb (dự án sử dụng npm)
-- File test-user-report.js (test script cũ)
-- Package lovable-tagger không cần thiết
-
-### ✅ Đã cập nhật:
-- Tên package.json nhất quán
-- License thống nhất (MIT)
-- Author information
 
 ## �🤝 Đóng góp
 
@@ -382,7 +333,7 @@ Dự án này được phân phối dưới giấy phép MIT. Xem file `LICENSE`
 
 - **Developer**: [duongloc216](https://github.com/duongloc216)
 - **Repository**: [Management-Equipment](https://github.com/duongloc216/Management-Equipment)
-- **Email**: your-email@example.com
+- **Email**: duongthanhloc216@gmail.com
 
 ## 🎯 Roadmap
 
